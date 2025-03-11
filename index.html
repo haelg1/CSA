@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RNG</title>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="wrapper">
+        <div class="container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <button id="btn">Generate</button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <h2>Random Number Generator</h2>
+      <form onsubmit="return false;">
+        <div class="elements-box">
+          <div class="values">
+            <p>Minimum Value</p>
+            <input
+              type="number"
+              id="minValue"
+              placeholder="Enter min value"
+              value="1"
+            />
+
+            <p>Maximum Value</p>
+            <input
+              type="number"
+              id="maxValue"
+              placeholder="Enter max value"
+              value="1"
+            />
+
+            <p>Count</p>
+            <input
+              type="number"
+              id="count"
+              placeholder="Enter count"
+              value="1"
+            />
+          </div>
+
+          <div class="result-box">
+            <p>Result</p>
+            <div class="result-container" id="result"></div>
+          </div>
+
+          <button onclick="generateRandomNumbers()">Generate</button>
+          <button onclick="clearResult()">Clear</button>
+          <button onclick="studinfo()" id="stud">&copy;</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

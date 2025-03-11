@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: #0E0E0E;
+    overflow: hidden;
+    
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background-color: #FF761C;
+    left: 10%;
+    top: 20%;
+    filter: blur(150px);
+    animation: blink 4s infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #FFF61C;
+    left: 85%;
+    top: 75%;
+    filter: blur(150px);
+    animation: blink 4s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.container{
+    background-color: #000;
+    height: calc(15vmin * 5);
+    width: calc(15vmin * 4);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(200, 100, 0, 0.2);
+}
+
+.container div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: #fff;
+    background: #291500;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #FF761C;
+}
+
+.quad-circle-1{
+    clip-path: circle(100% at 0 0);
+}
+
+.quad-circle-2{
+    clip-path: circle(100% at 100% 0);
+}
+.quad-circle-3{
+    clip-path: circle(100% at 100% 100%);
+}
+.quad-circle-4{
+    clip-path: circle(100% at 0 100%);
+}
+
+.triangle-1{
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.triangle-2{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%);
+}
+
+.triangle-3{
+    clip-path: polygon(0 100%, 100% 0%, 100% 100%);
+}
+
+.triangle-4{
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.container2:last-child {
+    margin-left: 50px;
+}
+
+.container2:not(:first-child) {
+    margin-left: 100px;
+}
+
+.container2 {
+    width: 25rem;
+    color: #fff;
+    background: #000;
+    padding: 18px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(7.4px);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-right: 10px;
+    border: 2px solid rgba(200, 100, 0, 0.2);
+}
+
+.container2 form {
+    margin: 20px 0 10px 0;
+}
+
+.container2 h2 {
+    font-size: 2rem;
+}
+
+.container2 form p {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container2 form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 10px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #291500;
+    transition: all 0.3s ease;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.container2 form input:hover {
+    border: 2px solid #FF761C;
+}
+
+.container2 form input:focus {
+    padding: 0 14px;
+    border: 2px solid #FF761C;
+}
+
+.container2 form button {
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+    background: #291500;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.container2 form button:hover {
+    background: #FF761C;
+}
+
+.result-container {
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    color: #fff;
+    background: #000;
+    font-size: 1rem;
+    border: 2px solid #291500;
+    height: 140px;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #291500;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5px;
+}
+
+#stud{
+    color: #fff;
+    background: #000;
+    font-size: 1rem;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+#stud:hover {
+    color:#FF761C;
+}
